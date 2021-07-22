@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>LANCASTER MK.III</strong></div><p align="center"><img src="../images/vvseng/lanca.jpg" width="600" height="234">
+</p>
+      <p>Тяжелый четырехмоторный бомбардировщик, представляющий собой цельнометаллический моноплан с двухкилевым оперением, был создан на базе среднего двухмоторного бомбардировщика Avro Model 679 Manchester. Первый прототип <strong>Lancaster</strong> поднялся в воздух 09.01.1941, а первый серийный самолёт вышел из заводских цехов 31.10.1941.
+        </div>
+        <br>
+        <br>
+Серия<strong> Lancaster Mk. III</strong>, с 1942 года получившая обозначение<strong> B.Mk.III</strong>, отличалась от Mk.I тем, что вместо британских двигателей Rolls-Royce Merlin серий 28, 38 и 224 на них устанавливались их американские аналоги, производимые по лицензии компанией Packard. Внешних различий Mk.I и <strong>Mk.III </strong>практически не имели, кроме того, они обладали идентичными лётно-техническими характеристиками и составом вооружения, однако обозначения сериям присвоили разные из-за отличий в требованиях технического обслуживания.
+</div>
+        <br>
+        <br>
+ 
+        <strong>Lancaster</strong> впервые приняли участие в боевых действиях в марте 1942 г. А уже с середины того же года самолёт стал основным британским тяжелым бомбардировщиком и участвовал в массированных налетах на территории Германии, Италии и Франции, применяясь преимущественно как ночной бомбардировщик. Связано это было прежде всего с недостаточной мощностью оборонительного вооружения.
+   Оборонительное вооружение, состоявшее из восьми 7,7-мм пулемётов Colt-Browning Mk.II, располагалось в трех механизированных башенных турелях: по два в носовой и верхней и четыре в кормовой. Максимальная бомбовая нагрузка Ланкастера была рекордной для тяжёлых бомбардировщиков Второй мировой войны: 14000 фунтов (6356 кг). Помимо обычных бомб, самолёт мог нести 8000-фунтовый (3632 кг) "блокбастер" (blockbuster) или две 4000-фунтовые (1816 кг) сверхтяжелые бомбы (high explosive) типа «cookie». Специально оборудованные самолёты могли поднимать бомбы ещё больших калибров. К одной из самых успешных операций, проведённых ими, следует отнести уничтожение флагмана Германского флота - линкора «Tirpiz». <br>
+   <br>
+
+ Всего было построено 3039 самолетов серии <strong>Mk.III</strong>, которые окончательно были сняты с вооружения в Великобритании в 1950 г.      </p></td>
+  </tr>
+</table>
+</body>
+</html>
+

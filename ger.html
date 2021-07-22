@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="text-align: justify"><p align="right"><em>«У себя в Люфтваффе я сам решаю, кто еврей, а кто нет»</em><br>
+      <strong>Г. ГЕРИНГ </strong>
+     <br>
+    </p>
+      <p>Немецкие военно-воздушные силы - <strong>Люфтваффе</strong> - можно сравнить с мифической силой Феникс, погибшей в огне и возрожденной из пепла. После поражения в Первой мировой войне странам Антанты были выданы для уничтожения 5000 вполне боеспособных немецких самолетов. Германский императорский военно-воздушный флот перестал существовать и в будущем Германии запрещалось иметь военную авиацию.</p>
+      <p>И все же возрождение немецкой авиации началось сразу после ее гибели. Прежде всего, Германии удалось сохранить авиационную промышленность. Некоторым фирмам, таким как "<em>Юнкерс</em>", "<em>Хейнкель</em>" и "<em>Дорнье</em>", удалось выжить благодаря заказам на авиатехнику из Советского Союза.</p>
+      <p>Постепенно налаживалась и подготовка летных кадров. В деле боевой подготовки летчиков существенную помощь Германии оказал Советский Союз, предоставивший в 1925 году аэродром в районе Липецка для создания немецкой авиашколы. За восемь лет существования этой авиашколы здесь было обучено, или переподготовлено 120 летчиков-истребителей и около 100 летчиков-наблюдателей.</p>
+      <p>К 1 марта 1935 года, когда Гитлер решил объявил о создании военно-воздушных сил Германии - Люфтваффе, основные структуры этой машины уже существовали.</p>
+      <p>Руководителем Люфтваффе был генерал-фельдмаршал, а затем рейхсмаршал авиации <strong>Герман Геринг</strong>.</p>
+      <p><strong>Адольф Галланд</strong>, командующий истребительной авиацией люфтваффе 1941-1945г.г.</p>
+      <p>По немецким данным к началу Второй мировой войны в сентябре 1939 года Люфтваффе имело 4333 самолета, из них 1235 бомбардировщиков, 340 пикирующих бомбардировщиков и 790 истребителей.</p>
+  <div align="center">
+        <p><a href="luft/bf_109.html"><img src="images/bf.jpg" alt="Bf. 109" width="424" height="218" border="0"></a></p>
+        <p class="style2"><em>Bf. 109</em></p>
+      </div>
+      <p>Немецкой авиационной промышленностью и промышленностью оккупированных Германией стран с 1 сентября 1939 года и до конца войны было выпущено 113515 самолетов всех типов, из них 18235 бомбардировщиков, 53729 истребителей, 12359 штурмовиков, 11546 учебных самолетов, 1190 морских самолетов, 3145 транспортно-десантных планеров.</p>
+      <p>Если учесть, что этим 113515 самолетам про<span style="text-align: center">тивостояли примерно 582000 самолетов, произведенных в Советском Союзе, Великобритании и США (297199 самолетов), то получится соотношение примерно 1:5, которое в некоторых сражениях, например при высадке союзных войск в Нормандии, увеличилось до 1:26.</span></p>
+      <p><span style="text-align: center">В течение лета 1944 года люфтваффе в среднем теряло 300 самолетов в неделю. Немецкие цифры говорят о сокрушительных потерях: 31 000 человек летного состава с июня 1941 года до июня 1944 года. А за следующие пять месяцев, с июня по окт</span>ябрь, эта цифра выросла на 13000, в общем до 44000 летчиков!</p>
+    <p>К концу войны немецкие самолеты появлялись в небе весьма редко.</p></td>
+  </tr>
+</table>
+</body>
+</html>

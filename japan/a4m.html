@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>A5M4</strong></div>
+
+      <p align="center"> <img src="../images/vvsjap/am5.jpg" width="300" height="139">
+      <p> Палубный истребитель <strong>Мицубиси тип 96</strong>, <strong>Модель 4(24)</strong>,<strong> Mitsubishi A5M4</strong> (codename <strong>«Claude»</strong>) <br>
+          Одноместный палубный истребитель, цельнометаллический моноплан с открытой кабиной и неубирающимся шасси. Первый в мире палубный истребитель-моноплан. Впервые прототип истребителя поднялся в воздух 04.02.1935. После длительной доводки самолёт был принят на вооружение японского флота под обозначением <strong>палубный истребитель тип 96 (A5M)</strong>, серийное производство началось осенью 1936 г. <br>
+          <br>
+          С 1938 г. строилась наиболее совершенная модификация истребителя <strong>A5M4</strong> (<strong>модель 4</strong>, позднее переименованная в<strong> модель 24</strong>). От предыдущих модификаций она отличалась новым, более обтекаемым козырьком пилотской кабины с улучшенным обзором, развитым гаргротом и наличием радиостанции. Поскольку при сопровождении бомбардировщиков иногда приходилось садиться затемно, машину оборудовали посадочными фарами и строевыми огнями на верхней плоскости крыльев для полётов над открытым морем в тёмное время суток. Самолеты оснащались фото-кинопулемётом, размещавшимся вне планера под центропланом у левой стойки шасси.<br>
+          <br>
+          Силовая установка состояла из 9-цилиндрового звездообразного двигателя воздушного охлаждения Накадзима Котобуки 41 номинальной мощностью 785 л.с., с двухлопастным (позже трёхлопастным) деревянным воздушным винтом изменяемого шага Сумитомо профиля VDM. Последние серийные самолеты стали оснащаться двигателями Котобуки 41КАИ той же мощности, эти машины получили обозначение модель 34.
+          Вооружение <strong>A5M</strong> состояло из двух фюзеляжных синхронных 7,7-мм пулемётов Ниппон-Сейкюсё тип 89 модель 2 (Vickers «class E») с боекомплектом 500 патронов на ствол. Под крылья могли подвешиваться две 30 кг бомбы тип 97. Под фюзеляжем, на несъемном пилоне, мог устанавливаться подвесной топливный бак емкостью 160 л., позднее она была увеличена до 210 л. <br>
+          <br>
+          Истребители <strong>A5M</strong> применялись в Китае с сентября 1937 г. по сентябрь 1941 г. Применялись в начальный период войны на Тихом океане, недолго использовались в ПВО Японии и на Маршалловых островах. Затем, до конца войны эксплуатировались в учебных частях и летных школах флота. В 1945 г. использовались подразделениями «камикадзе». <br>
+          В целом <strong>A5M</strong> был на уровне современных ему требований к морскому истребителю. Самолёт обладал хорошей устойчивостью и маневренностью, был прост в технике пилотирования. Однако его конструкция не имела резервов для дальней модернизации и быстро устарела. Вооружение было слабым, бронирование полностью отсутствовало, топливные баки были непротектированными, крыло обладало недостаточной прочностью. 
+          Самолет снят с производства в 1941 г. В общей сложности изготовлено 1095 <strong>A5M</strong> всех модификаций
+  </div>
+          <br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

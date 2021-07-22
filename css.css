@@ -1,0 +1,100 @@
+@charset "utf-8";
+table
+{
+	background-color: #000000;
+	color: #B23652;
+	text-align: justify;
+	vertical-align: text-top;
+}
+.a
+{
+	text-decoration: none;
+    	color: #A6062A;
+}
+.horizontalcssmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.horizontalcssmenu ul li{
+position: relative;
+display: inline;
+float: left;
+
+}
+
+/*Top level menu link items style*/
+.horizontalcssmenu ul li a{
+	display: block;
+	width: 200px; /*Width of top level menu link items*/
+	padding: 0px 8px;
+	border: 2px solid #B23652;
+	border-left-width: 1;
+	text-decoration: none;
+	background: url(../menubg.gif) center center repeat-x;
+	color: black;
+	font-family: Tahoma;
+	font-size: 20px;
+	font-weight: bold;
+}
+	
+/*Sub level menu*/
+.horizontalcssmenu ul li ul{
+left: 0;
+top: 0;
+border-top: 1px solid #202020;
+position: absolute;
+display: block;
+visibility: hidden;
+z-index: 100;
+}
+
+/*Sub level menu list items*/
+.horizontalcssmenu ul li ul li{
+display: inline;
+float: none;
+}
+
+
+/* Sub level menu links style */
+.horizontalcssmenu ul li ul li a{
+	width: 200px; /*width of sub menu levels*/
+	font-weight: normal;
+	padding: 2px 5px;
+	border-width: 1px 1px 1px;
+	background-color: #B23652;
+}
+
+.horizontalcssmenu ul li a:hover{
+	background: url(../menubgover.gif) center center repeat-x;
+	text-align: center;
+}
+
+.horizontalcssmenu ul li ul li a:hover{
+background: #cde686;
+}
+
+.horizontalcssmenu .arrowdiv{
+position: absolute;
+right: 0;
+background: transparent url(../menuarrow.gif) no-repeat center left;
+}
+.style3 {
+	color: #B23652;
+	text-decoration: none;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+
+body {
+	background: url(images/365637-1680x1050.jpg) 0 0 no-repeat;
+} 
+p {
+	color: #B7C0A5;
+
+}
+

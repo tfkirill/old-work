@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+      <tr>
+        <td width="145"><a href="england/beaf.html"><img src="images/vvseng/075_beaufighter_mkx.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/beaf.html" class="style3"><strong>Beaufighter Mk.X</strong></a><br>
+          <p>Компания "Bristol" решила использовать существующие разработки и основные элементы конструкции бомбардировщика-торпедоносца Beaufort для создания нового дальнего истребителя - так на свет появился проект "<strong>Beaufighter</strong>", уникальный в своем роде хотя бы тем, что разрабатывался не по заданию Министерства авиации Великобритании...</p></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип : Штурмовик, Торпедоносец <br>
+          Год : 1942</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="england/gladiator.html"><img src="images/vvseng/006_gladiator_mk2.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/gladiator.html" class="style3"><strong>Gladiator Mk.II</strong></a><br>
+          <p>Истребитель-биплан <strong>Глостер Гладиатор (Gloster Gladiator)</strong> был лучшим и последним бипланом, стоявшим на вооружении британских ВВС.</p>
+           
+          <p> </p></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип :Истребитель <br>
+          Год : 1937</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="england/houker.html"><img src="images/vvseng/033_hurricanemkii.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/houker.html" class="style3"><strong>Hurricane Mk.IIB</strong></a><br>
+          <p><strong>Хоукер Харрикейн (англ. Hawker Hurricane) </strong>был самым массовым британским истребителем Второй мировой войны. Проектировавшийся еще с 1934 года, самолет поступил на вооружение за год до начала войны.</p>
+          <div></div></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип :Истребитель <br>
+          Год : 1940</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="england/lanca.html"><img src="images/vvseng/057_lancaster_mk3.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/lanca.html" class="style3"><strong>Lancaster Mk.III</strong></a><br>
+          <p>Тяжелый четырехмоторный бомбардировщик, представляющий собой цельнометаллический моноплан с двухкилевым оперением, был создан на базе среднего двухмоторного бомбардировщика Avro Model 679 Manchester. Первый прототип <strong>Lancaster</strong> поднялся в воздух 09.01.1941, а первый серийный самолёт вышел из заводских цехов 31.10.1941.</p></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип : Тяжелый бомбардировщик <br>
+          Год : 1941</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="england/spitfire.html"><img src="images/vvseng/040_spitfire_mk5b.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/spitfire.html" class="style3"><strong>Spitfire Mk.I</strong></a><br>
+          <p>Одноместный истребитель, одномоторный цельнометаллический моноплан. Опытный Spitfire (Prototype K5054) совершил свой первый полет 06.03.1936, серийное производство истребителей этого типа началось в мае 1938 г, а с августа того же года они появились в строевых частях RAF.</p></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип :Истребитель <br>
+          Год : 1939</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="england/weling.html"><img src="images/vvseng/wellington_mk10.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="england/weling.html" class="style3"><strong>Wellington Mk.X</strong></a><br>
+          <p><strong>Wellington Mk.X </strong>стал последней серийной модификацией бомбардировщика. Он строился на базе планера Mk.III и имел аналогичное вооружение и оборудование.</p></td>
+        <td style="color: #B7C0A5">Страна :Великобритания<br>
+          Тип :Бомбардировщик <br>
+          Год : 1942</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

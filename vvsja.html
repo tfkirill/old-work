@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+      <tr>
+        <td><a href="japan/a4m.html"><img src="images/vvsjap/a5m4.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/a4m.html" class="style3"><strong>A5M</strong></a><br>
+          <p>Одноместный палубный истребитель</p>
+          <p>Первый в мире палубный истребитель-моноплан. Обладал хорошей устойчивостью и маневренностью, был прост в технике пилотирования. Применялся в начальный период войны на Тихом океане. В 1945 г. использовались подразделениями «камикадзе».</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип :Истребитель <br>
+          Год : 1937</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td width="145" ><a href="japan/f1m.html"><img src="images/vvsjap/f1m2.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/f1m.html" class="style3"><strong>F1M2</strong></a><br>
+          <p>Одномоторный цельнометаллический биплан с основным центральным поплавком и двумя вспомогательными подкрыльевыми поплавками. Разрабатывался как специализированный катапультный разведчик-корректировщик артиллерийского огня для линкоров и тяжёлых крейсеров Японского Императорского Флота.</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип : Гидроплан <br>
+          Год : 1940</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="japan/g4m.html"><img src="images/vvsjap/051_g4m1.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/g4m.html" class="style3"><strong>G4M1</strong></a><br>
+          <p>Дальние двухмоторные бомбардировщики-торпедоносцы <strong>Mitsubishi G4M</strong> при относительно небольшой бомбовой нагрузке в 1000 кг отличались огромной дальностью полета порядка 6000 км, что сравнимо с дальностью полета стратегических бомбардировщиков. Из-за необходимости соблюдения Вашингтонского морского соглашения Япония сильно отставала в строительстве флота, поэтому, чтобы защититься от кораблей вероятного противника</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип :Бомбардировщик <br>
+          Год : 1941</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="japan/h6.html"><img src="images/vvsjap/H6K4.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/h6.html" class="style3"><strong>H6K4</strong></a><br>
+          <p>Летающая лодка <strong>Каваниси тип 97 модель 22</strong>, <strong>Kawanishi H6K4 (</strong>codename<strong> «Mavis»)</strong>
+          Летающие лодки <strong>H6K </strong>широко использовались в ходе начального этапа войны на Тихом океане. Занимались дальней разведкой, сопровождением конвоев, поиском подводных лодок, наносили бомбовые удары, проводили поисково-спасательные операции.</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип :Бомбардировщик, Летающая лодка, Торпедоносец <br>
+          Год : 1939</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="japan/ki61.html"><img src="images/vvsjap/084_ki_61_1a_hei.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/ki61.html" class="style3"><strong>Ki-61</strong></a><br>
+          <p>Легкий многоцелевой истребитель Ki-61 Hien («Ласточка») имел хорошее вооружение и отличался высокой защищенностью. Создатели Ki-61 с самого начала позаботились о протектировании топливных баков и обеспечении защиты пилота.</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип :Истребитель <br>
+          Год : 1943</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="japan/ki43.html"><img src="images/vvsjap/093_ki_43_2.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="japan/ki43.html" class="style3"><strong>Ki-43-II</strong></a><br>
+          <p>Одноместный японский истребитель <strong>Nakajima Ki-43 Hayabusa (Сокол сапсан)</strong> создан для замены Ki 27 по контракту ВВС Императорской армии Японии. Конструкция Ki 27 была столь удачной, что, не прибегая к обычному для Японии конкурсу на производство самолета...</p></td>
+        <td style="color: #B7C0A5">Страна : Япония<br>
+          Тип :Истребитель <br>
+          Год : 1942</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

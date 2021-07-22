@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>WELLINGTON MK.X</strong></div>
+     
+        <p align="center"> 
+          <img src="../images/vvseng/weling.png" width="583" height="252"></p>
+        <p><strong>Wellington Mk.X</strong> стал последней серийной модификацией бомбардировщика. Он строился на базе планера Mk.III и имел аналогичное вооружение и оборудование. Основным отличием стали новые 14-цилиндровые двухрядные двигатели воздушного охлаждения Bristol Hercules Mk.VI (на часть самолётов ставили Hercules Mk.XVI) номинальной мощностью 1675 л.с. Менее заметным, но не менее важным, чем замена двигателей, отличием стал переход к новому алюминиевому сплаву с лучшим отношением предела прочности к удельному весу. Использование этого сплава в конструкции самолёта позволило увеличить взлётный вес, сохранив лётные характеристики модификации Mk.III.<br>
+            <br>
+            Серийно модификация <strong>Mk.X (Type 448)</strong> стала выпускаться с осени 1942 г. и стала самой массовой в семействе «Веллингтонов». В общей сложности построено 3803 экземпляра. В октябре 1945 года была построена последняя из 11461 машины, выпущенной серийно.<br>
+            <br>
+            <strong>«Веллингтоны»</strong> применялись в Европе с сентября 1939 г. как дальние разведчики, дневные и ночные бомбардировщики, с начала 1940 г. только как ночные. С сентября 1940 г. самолёт использовался в Северной Африке, с апреля 1942 на Дальнем Востоке.<br>
+            <br>
+            В 1942-43 годах <strong>Wellington </strong>стал основным самолётом Бомбардировочного Командования (Bomber Command RAF). Боевой опыт показал, что он являлся лучшим из трех средних бомбардировщиков, использовавшихся в этот период. Он был более скоростным, чем Armstrong-Whitworth Whitley, и обладал большей дальностью при равной бомбовой нагрузке, чем Handley-Page Hampden. В состоявшемся 30.05.1942 первом налёте «1000 бомбардировщиков» на Кёльн из 1043 самолётов, отправившихся в рейд, 599 были бомбардировщики <strong>Wellington</strong>.<br>
+            Боевая работа в Западной Европе закончилась для «Веллингтонов»–бомбардировщиков в ночь на 09.10.1943. На смену им в бомбардировочную авиацию RAF, наращивавших натиск на Германию, пришли тяжёлые четырёхмоторные машины – Short Stirling, Handley-Page Halifax и Avro Lancaster.<br>
+            <br>
+    На других театрах военных действий самолёт применялся RAF до конца войны. Противолодочными <strong>«Веллингтонами»</strong> потоплено значительное количество подводных лодок стран «Оси». Снят с производства в октябре 1945, снят с вооружения в марте 1953.</p></td>
+  </tr>
+</table>
+</body>
+</html>
+

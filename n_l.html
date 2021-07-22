@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><p>В течение Второй мировой войны, по немецким данным, пилоты люфтваффе одержали около 70 000 побед. Более 5000 немецких лётчиков стали асами, одержав пять и более побед. Из 43 100 советских самолётов, уничтоженных пилотами люфтваффе за время Второй мировой войны, 24 тысячи - на счету трехсот асов. Более 8500 немецких лётчиков-истребителей погибло, 2700 пропали без вести или попали в плен. 9100 пилотов были ранены во время боевых вылетов. В список внесены пилоты, одержавшие более 200 побед.</p>
+      <p>Однако, ВВС Красной Армии в воздушных боях потеряли 12 189 самолётов и 15 161 не вернулись с боевого задания (потери по всем причинам&nbsp;— 39 408), авиация ГВФ соответственно 423 и 244 единиц. Только часть из них могла быть сбита истребителями противника (дальняя авиация, авиация ПВО и ВВС ВМФ по всем причинам боевых потерь лишились соответственно: 2776, 1588, 4040 самолётов).<br>
+        Потери ВВС Великобритании составили 15 175 самолётов.<br>
+        Потери ВВС США составили 41 575 самолётов.</p>
+      <table border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+        <tbody>
+          <tr>
+            <th width="114">Фамилия, Имя</th>
+            <th width="92">Авиаполк</th>
+            <th width="71">Победы личные</th>
+            <th width="125">Самолёт</th>
+            <th width="174">Количество вылетов / воздушных боев</th>
+            <th width="250">Примечания</th>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Хартманн, Эрих Альфред<br>
+              Erich Hartmann</span></td>
+            <td><span class="style3" style="color: #B7C0A5">52, 71 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">352</span></td>
+            <td><span class="style3" ><a href="luft/bf_109.html" class="style3" style="color: #B33342"><strong><em>Bf-109</em></strong></a></span></td>
+            <td><span class="style3" style="color: #B7C0A5">1400 / 825</span></td>
+            <td><span class="style3" style="color: #B7C0A5">Летчик-ас времен ВМВ, сбивший наибольшее количество самолётов. Все победы одержаны на Восточном фронте, в том числе 7 истребителей ВВС США Р-51"Мустанг" над Румынией</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Баркхорн, Герхард<br>
+              Gerhard Barkhorn</span></td>
+            <td><span class="style3" style="color: #B7C0A5">2, 52, 6 JG, 44 JV</span></td>
+            <td><span class="style3" style="color: #B7C0A5">301</span></td>
+            <td><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><strong><em>Bf-109</em></strong></a>, <a href="luft/fw.html" class="style3"><em><strong>Fw-190,</strong></em></a> <a href="luft/me.html" class="style3"><strong><em>Me-262</em></strong></a></span></td>
+            <td><span class="style3" style="color: #B7C0A5">1100</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Ралль, Гюнтер<br>
+              Guenther Rall</span></td>
+            <td><span class="style3" style="color: #B7C0A5">52, 11 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">275</span></td>
+            <td><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><em><strong>Bf-109</strong></em></a></span></td>
+            <td><span class="style3" style="color: #B7C0A5">&gt; 800 / 621</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Киттель, Отто<br>
+              Otto Kittel</span></td>
+            <td><span class="style3" style="color: #B7C0A5">54 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">267</span></td>
+            <td><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><em><strong>Bf-109</strong></em></a>, <strong><em><a href="luft/fw.html" class="style3">Fw-190</a></em></strong><em><a href="luft/fw.html" class="style3"></a></em></span></td>
+            <td><span class="style3" style="color: #B7C0A5">583</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Новотны, Вальтер<br>
+              Walter Nowotny</span></td>
+            <td><span class="style3" style="color: #B7C0A5">54, 7, 101 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">258</span></td>
+            <td class="style3"><a href="luft/fw.html" class="style3"><em><strong>Bf-109</strong></em></a>, <a href="luft/fw.html" class="style3"><strong><em>Fw-190</em></strong></a><em><strong>,</strong></em> <a href="luft/me.html" class="style3"><em><strong>Me-262</strong></em></a></td>
+            <td><span class="style3" style="color: #B7C0A5">442</span></td>
+            <td><span class="style3" style="color: #B7C0A5">из них 2 на Me-262</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Батц, Вильгельм<br>
+              Wilhelm Batz</span></td>
+            <td><span class="style3" style="color: #B7C0A5">52 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">237</span></td>
+            <td><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><em><strong>Bf-109</strong></em></a></span></td>
+            <td><span class="style3" style="color: #B7C0A5">445 (451)></span></td>
+            <td><span class="style3" style="color: #B7C0A5">232&nbsp;— Восточный фронт<br>
+              5&nbsp;— Западный фронт<br>
+              в том числе 2 4-х моторных бомбардировщика</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Рудорффер, Эрих<br>
+              Erich Rudorffer</span></td>
+            <td><span class="style3" style="color: #B7C0A5">2, 54, 7 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">222</span></td>
+            <td><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><em><strong>Bf-109</strong></em></a>, <strong><em><a href="luft/fw.html" class="style3">Fw-190</a></em></strong>, <em><strong><a href="luft/me.html" class="style3">Me-262</a></strong></em><strong><a href="luft/me.html" class="style3"></a></strong></span></td>
+            <td><span class="style3" style="color: #B7C0A5">&gt; 1000</span></td>
+            <td><span class="style3" style="color: #B7C0A5">136&nbsp;— Восточный фронт<br>
+              26&nbsp;— Северная Африка<br>
+              60&nbsp;— Франция, «Битва за Англию» и Западный фронт<br>
+              в том числе 10 4-х моторных бомбардировщика, 12 на Me-262</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Бэр, Гейнц<br>
+              Heinz Bär</span></td>
+            <td><span class="style3" style="color: #B7C0A5">51, 77, 1, 3 JG, 2 EJG, 44 JV</span></td>
+            <td><span class="style3" style="color: #B7C0A5">220</span></td>
+            <td ><a href="luft/fw.html" class="style3"><strong><em>Fw-190</em></strong></a><em><strong>, <a href="luft/me.html" class="style3">Me-262</a></strong></em><strong><a href="luft/me.html" class="style3"></a></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">~ 1000</span></td>
+            <td><span class="style3" style="color: #B7C0A5">Сбивший наибольшее количество самолётов реактивный ас ВМВ.<br>
+              79&nbsp;— Восточный фронт<br>
+              45&nbsp;— Северная Африка и Средиземноморье<br>
+              4&nbsp;— Франция<br>
+              13&nbsp;— «Битва за Англию»<br>
+              83&nbsp;— Западный фронт<br>
+              в том числе 21 4-х моторный бомбардировщик, 16 на Me-262,</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Граф, Герман<br>
+              Hermann Graf</span></td>
+            <td><span class="style3" style="color: #B7C0A5">52, 11 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">212</span></td>
+            <td class="style3"><em><strong><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3">Bf-109</a>, <a href="luft/fw.html" class="style3">Fw-190</a></span></strong></em></td>
+            <td><span class="style3" style="color: #B7C0A5">832</span></td>
+            <td><span class="style3" style="color: #B7C0A5">202&nbsp;— Восточный фронт<br>
+              10&nbsp;— Западный фронт (в том числе шесть бомбардировщиков В-17)</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Эрлер, Генрих<br>
+              Heinrich Ehrler</span></td>
+            <td><span class="style3" style="color: #B7C0A5">77, 5, 7 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">208</span></td>
+            <td class="style3"><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3"><strong><em>Bf-109</em></strong></a><em><strong>,  <a href="luft/me.html" class="style3">Me-262</a></strong><a href="luft/me.html" class="style3"></a></em></span></td>
+            <td><span class="style3" style="color: #B7C0A5">~ 400</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Вейсенбергер, Теодор<br>
+              Theodor Weissenberger</span></td>
+            <td><span class="style3" style="color: #B7C0A5">77, 5, 7 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">208</span></td>
+            <td class="style3"><strong><em><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3">Bf-109</a>, <a href="luft/bf_110.html" class="style3">Bf-110</a>, <a href="luft/me.html" class="style3">Me-262</a></span></em></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">~ 500</span></td>
+            <td><span class="style3" style="color: #B7C0A5">Из них 8 на реактивном Me-262</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Ганс Филипп<br>
+              Hans Philipp</span></td>
+            <td><span class="style3" style="color: #B7C0A5">76, 54, 1 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">206</span></td>
+            <td class="style3"><strong><em><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3">Bf-109</a></span></em></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">&gt; 500</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Шук, Вальтер<br>
+              Walter Schuck</span></td>
+            <td><span class="style3" style="color: #B7C0A5">5, 7 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">206</span></td>
+            <td class="style3"><strong><em><span class="style3" style="color: #B7C0A5"><a href="luft/me.html" class="style3">Me-262</a></span></em></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">~ 500</span></td>
+            <td><span class="style3" style="color: #B7C0A5">из них 8 на реактивном Me-262</span></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Хафнер, Антон<br>
+              Anton Hafner</span></td>
+            <td><span class="style3" style="color: #B7C0A5">51 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">204</span></td>
+            <td class="style3"><strong><em><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3">Bf-109</a>, <a href="luft/fw.html" class="style3">Fw-190</a></span></em></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">795</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="style3" style="color: #B7C0A5">Липферт, Хельмут<br>
+              Helmut Lipfert</span></td>
+            <td><span class="style3" style="color: #B7C0A5">52 JG</span></td>
+            <td><span class="style3" style="color: #B7C0A5">203</span></td>
+            <td class="style3"><strong><em><span class="style3" style="color: #B7C0A5"><a href="luft/bf_109.html" class="style3">Bf-109</a></span></em></strong></td>
+            <td><span class="style3" style="color: #B7C0A5">~ 700</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

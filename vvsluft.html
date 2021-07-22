@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+      <tr>
+        <td width="145"><a href="luft/bf_109.html"><img src="images/vvsluft/003_bf-109e-3.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="luft/bf_109.html" class="style3"><strong>Bf.109</strong></a><br>
+          <p><strong>Messershmitt Bf.109</strong> был самым распространенным истребителем, стоявшим на вооружении Люфтваффе с самого начала Второй мировой войны.</p>
+          <p>Модификация <strong>Bf.109E</strong> "Эмиль" являлась пиком развития серии и по некоторым параметрам превосходила лучшие самолеты Союзников того периода. Основным отличием этой модификации от модели <strong>Bf.109D</strong> был более мощный двигатель DB601A мощностью 1085 л.с.</p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип:Бомбардировщик <br>
+          Год : 1944</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="luft/fw.html"><img src="images/vvsluft/083_fw-190f-8.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="luft/fw.html" class="style3"><strong>Fw.190</strong></a><br>
+          <p>Самолеты модельного ряда <strong>Fw.190</strong> применялись не только в качестве истребителей, но и для атаки наземных целей. Осенью 1942 года, в связи с ростом роли штурмовой авиации, а также быстрым устареванием <strong>Ju.87</strong>, в производство запустили модификацию <strong>Fw.190F</strong> - самолет для поддержки сухопутных войск. Чтобы самолет мог выполнять задачи штурмовика, его двигатель был оснащен новым инжектором, позволяющим увеличить скорость на низких высотах. Также была установлена более мощная радиостанция для координации действий с наземными войсками. </p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип:Истребитель, Штурмовик <br>
+          Год : 1944</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="luft/me.html"><img src="images/vvsluft/011_me-262a-1a.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="luft/me.html" class="style3"><strong>Me.262</strong></a><br>
+          <p>Истребитель <strong>Messerschmitt Me.262</strong> был первым серийным реактивным истребителем в мире. Несмотря на то, что разработка самолета началась еще до начала Второй мировой войны, в серию он попал лишь в 1944. Стоит отметить, что в столь долгом цикле разработки виноваты не инженеры Мессершмитта, а разработчики двигателей из BMW.</p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип :Истребитель <br>
+          Год : 1944</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><img src="images/vvsluft/099_ta-152h-1.png" width="145" height="145" alt=""/></td>
+        <td><a href="luft/ta.html" class="style3"><strong>Ta.152</strong></a>
+          <p>С появлением у Союзных войск высотных бомбардировщиков <strong>B-17</strong>, способных доставлять смертоносный груз на высотах, недосягаемых для атаки обычными истребителями, у Люфтваффе появилась необходимость в скоростном высотном истребителе. Так появился самолет<strong> Ta.152</strong>, разработанный компанией "Fokke-Wulf" на базе <strong>Fw.190D</strong></p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип :Истребитель <br>
+          Год : 1944</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="luft/bf_110.html"><img src="images/vvsluft/014_bf-110c-4.png" width="145" height="145" alt=""/></a></td>
+        <td><span class="style3"><a href="luft/bf_110.html" class="style3"><strong>Bf.110</strong></a></span><br>
+          <p><strong>Messerschmitt Bf.110 </strong>представлял собой двухдвигательный тяжелый истребитель, разработанный в 1936 году. Его конструкция строилась на той же основе, что и <strong>Bf.109</strong>. Крылья состояли из двух секций каждое, они крепились к фюзеляжу в трех точках - одна на передней кромке, две на лонжероне. Кабина была закрыта длинным остекленным фонарем. С помощью гидравлики убирались все три стойки шасси. Экипаж самолета состоял из трех человек - перед крылом сидел пилот, за ним - штурман-радист. Третий член экипажа, стрелок, располагался за крылом.</p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип : Тяжелый истребитель <br>
+          Год : 1937</td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+        </tr>
+      <tr>
+        <td><a href="luft/do.html"><img src="images/vvsluft/do_217e_2.png" width="145" height="145" alt=""/></a></td>
+        <td><a href="luft/do.html" class="style3"><strong>Do.217</strong></a><br>
+          <p>Сначала самолёт разрабатывался как развитие конструкции Do.17Z, но впоследствии концепция претерпела введение настолько существенных новшеств, что по сути явилась принципиально новой конструкцией, которую практически ничего не связывало с предшественником. Прототип Do.217V1 был облётан в августе 1938 г. Серийное производство первой серийной модификации Do.217E-1 началось в конце 1940 г.</p></td>
+        <td style="color: #B7C0A5">Страна :Германия<br>
+          Тип :Бомбардировщик, Пикирующий бомбардировщик, Тяжелый бомбардировщик <br>
+          Год : 1940</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

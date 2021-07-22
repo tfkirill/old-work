@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>DO.217</strong></div>
+
+        <p align="center"><img src="../images/vvsluft/do.jpg" width="336" height="150"></p>
+        <p>Средний двухмоторный бомбардировщик <strong>Dornier Do.217E-2</strong>.<br>
+          <br>
+          Свободнонесущий цельнометаллический моноплан с двухкилевым оперением, убирающимися шасси и хвостовым колесом. Бомбардировщик создан в КБ фирмы Dornier Flugzeugwerke под руководством Клода Дорнье.<br>
+          В 1937 г. германское министерство авиации (Reichsluftfahrtministerium) выступило с инициативой создания нового усовершенствованного варианта бомбардировщика Do.17Z. Новая машина должна была нести увеличенную бомбовую нагрузку, иметь больший запас топлива, а также обладать возможностью производить бомбометание с пикирования.</p>
+        <p>Сначала самолёт разрабатывался как развитие конструкции Do.17Z, но впоследствии концепция претерпела введение настолько существенных новшеств, что по сути явилась принципиально новой конструкцией, которую практически ничего не связывало с предшественником. Прототип Do.217V1 был облётан в августе 1938 г. Серийное производство первой серийной модификации Do.217E-1 началось в конце 1940 г.</p>
+        <p>Силовая установка самолётов модификации Do.217E-2 состояла из двух 14-цилиндровых звездообразных двигателей воздушного охлаждения BMW801ML взлётной мощностью 1580 л. с.<br>
+          По сравнению с Do.17Z оборонительное вооружение Do.217E-2 было существенно усилено. Самолёты были оснащены верхней электрифицированной турелью типа DL131, в которой устанавливался 13-мм пулемёт Rheinmetall-Borsig MG.131 с ленточным питанием и боекомплектом 500 патронов. Турель обеспечивала круговой обстрел по горизонту и угол вертикального наведения от 00 до 850.</p>
+        <p>Кроме турели DL131, оборонительное вооружение самолёта включало одну 15-мм (или 20-мм) пушку Mauser MG.151/15 с боекомплектом 250 снарядов в носовой неподвижной установке (предназначалась для стрельбы по надводным целям), один 7,92-мм пулемёт Rheinmetall-Borsig MG.15 (боекомплект 750 патронов) в носовой подвижной установке. В нижней линзовой установке был установлен 13-мм крупнокалиберный пулемёт Rheinmetall-Borsig MG.131, а в двух боковых блистерах кабины было размещено по одному 7,92-мм пулемёту Rheinmetall-Borsig MG.15.<br>
+          На Do.217E-2 мог быть установлен модификационный комплект R23, представлявший собой два неподвижных спаренных 7,92-мм пулемёта Mauser MG.81Z в хвостовой части фюзеляжа с боекомплектом 350 патронов на ствол. Огонь из них вёл пилот с помощью перископа RF2C и прицела PV1B, однако стрельба из этой установки имела больше психологический, чем реальный эффект.</p>
+        <p>Самолёт мог нести до 4000 кг бомб, из которых 2517 кг подвешивались во внутреннем бомбовом отсеке. Штатная бомбовая нагрузка включала четыре 500-кг или восемь 250-кг бомб. Были возможны и другие варианты боевой нагрузки, например, две морские неконтактные авиационные мины LMA или одна торпеда LTF5b.</p>
+        <p>В общей сложности было построено 185 самолётов модификации Do.217E-2.</p></td>
+  </tr>
+</table>
+</body>
+</html>
+

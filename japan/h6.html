@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>H6K4</strong></div>
+  
+      <p align="center"><img src="../images/vvsjap/h6k4.jpg" width="333" height="151"></p>
+          <p>Летающая лодка <strong>Каваниси тип 97 модель 22</strong>, <strong>Kawanishi H6K4 (</strong>codename<strong> «Mavis»)</strong>
+            <br>
+            <br>
+Летающая лодка, четырехмоторный цельнометаллический моноплан-парасоль с двухкилевым оперением. Опытный образец, лодка тип <strong>S</strong>, впервые поднялась в небо 14.07.1936. Принята на вооружение Японским Императорским Флотом (Imperial Japanese Navy) как <strong>летающая лодка тип 97</strong> в 1937 г. Серийное производство начато в сентябре 1938 г.<br>
+Наиболее массовая модификация летающей лодки <strong>модель 22 (H6K4)</strong> была создана в 1940 г, и оснащалась 14-цилиндровыми двухрядными звездообразными двигателями воздушного охлаждения Мицубиси Кинсей 43 мощностью в 1000 л с (на первых 119 самолетах). Затем устанавливался несколько более мощный и высотный Кинсей 46. <strong>H6K4</strong> имела увеличенный запас топлива, что позволило довести продолжительность полета до 25 часов, а дальность до 6000 км. <strong>Лодки 22 модели</strong> получили бортовые блистеры, оснащённые пулемётными турелями, за счёт этого хвостовая секция была несколько удлинена.<br>
+Оборонительное вооружение включало четыре 7,7-мм пулемета тип 97 (Lewis) с боекомплектом 582 патронов на ствол и 20-мм пушку тип 99-I с боекомплектом 432 снаряда в кормовой турели. На внешней подвеске лодка могла нести либо 12 бомб калибром 60 кг, либо 4 250 кг бомбы, либо две 800 кг торпеды тип 91 модель 1.<br>
+Существенным недостатком всех летающих лодок <strong>H6K</strong> было отсутствие бронирования для защиты экипажа и агрегатов, и протектирования топливных баков. Всё это было принесено в жертву колоссальной дальности полёта. Только начав нести неоправданные потери, на поздних самолётах 22 модели конструкторы озаботились защитой экипажа.<br>
+Летающие лодки <strong>H6K</strong> начали боевые действия с налёта на остров Уэйк 11.12.1941, затем они широко использовались в ходе начального этапа войны на Тихом океане. Занимались дальней разведкой, сопровождением конвоев, поиском подводных лодок, наносили бомбовые удары, проводили поисково-спасательные операции (Search and Rescue). С принятием на вооружение нового гидросамолета - дальнего разведчика <strong>H8K</strong>, летающие лодки <strong>H6K</strong> начали переоборудоваться в транспортные самолеты. Находились в эксплуатации вплоть до капитуляции Японии в 1945 г.
+     Всего было построено 127 летающих лодок <strong>H6K4</strong>, из 217 произведенных <strong>H6K</strong> всех модификаций.          </p>
+          <br>
+
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>
+

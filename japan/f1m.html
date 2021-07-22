@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>F1M2</strong></div>
+    <p align="center"><img src="../images/vvsjap/f1m.jpg" width="302" height="167"> </p>
+    <p>Поплавковый разведчик-корректировщик Мицубиси тип 0 модель 11 «Рейкан» («Зерокан»), Мицубиси F1M2  (кодовое имя "Пит")
+      
+      Одномоторный цельнометаллический биплан с основным центральным поплавком и двумя вспомогательными подкрыльевыми поплавками. Разрабатывался как специализированный катапультный разведчик-корректировщик артиллерийского огня для линкоров и тяжёлых крейсеров Японского Императорского Флота.
+      
+      Первый опытный образец самолёта Ка-17 (F1M1) с двигателем Накадзима Хикари 1 приступил к лётным испытаниям в июне 1936 г. Испытания выявили у гидросамолёта множество «болезней», главной из которых являлась плохая путевая устойчивость. К тому же F1M1 имел неудовлетворительную мореходность.
+      
+      Два года ушло на серьёзную переделку конструкции. Для F1M сконструировали новый центральный поплавок взамен поплавка от гидроплана Накадзима E8N1, стоявшего на прототипах. Место мотора Накадзима Хикари занял более мощный двухрядный 14-цилиндровый двигатель воздушного охлаждения Мицубиси Зусей 13 (такой же, как на истребителях «Зеро»), развивавший взлётную мощность 875 л. с.<br>
+      Усовершенствованный вариант гидросамолёта под обозначением поплавковый разведчик-корректировщик тип 0 модель 11 (F1M2) был запущен в серийное производство в 1940 г.
+      F1M2 вооружался двумя синхронными фюзеляжными 7,7-мм пулемётами тип 97 модель 3а с боекомплектом 500 патронов на ствол, ещё один 7,7-мм пулемёт тип 97 (Lewis Mk.III) с боекомплектом 582 патронов (6 стандартных магазинов) устанавливался на турели в кабине лётчика-наблюдателя для обороны задней верхней полусферы. На консолях нижнего крыла имелись узлы для подвески двух 60-кг, либо двух 30-кг, либо шести 20-кг бомб.<br>
+      В начале войны на Тихом океане, в боях за Филиппины, на Новой Гвинее и Соломоновых островах F1M2 применялись с плавучих баз, позднее их использовали с линкоров, крейсеров и с берега. В основном «Рейканы» использовались в качестве разведчиков, корректировщиков артиллерийского огня, лёгких бомбардировщиков, противолодочных самолётов. В июне 1942 г. на Алеутских островах они осуществляли бомбометание с пикирования; там же обеспечивали прикрытие японских позиций с воздуха как гидроистребители.
+      
+      Всего выпущено 1118 экземпляров F1M2, производство прекращено в марте 1944 г. На вооружении эти машины состояли до конца войны.</p></td>
+  </tr>
+</table>
+</body>
+</html>
+

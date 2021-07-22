@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr  align="justify">
+    <td><p>После того как <strong>Королевские ВВС</strong> (Royal Air Force - сокращенно <strong>RAF</strong>) выиграли к началу 1942 года &ldquo;Битву за Англию&rdquo;, стало ясно, что при отсутствии соприкосновения с противником на суше единственным для Великобритании средством подавления промышленного потенциала и боевого духа населения Герма<span style="text-align: justify">нии осталась бомбардировочная авиация. К этому моменту на ее вооружении состояли преимущественно двухмоторные машины — &ldquo;Уитли&rdquo;, &ldquo;Хэмдэн&rdquo; и &ldquo;Веллингтон&rdquo;. Никаких иллюзий в отношении боевых возможностей этих по большей части устаревших машин командование уже не имело: нанести сколь-нибудь ощутимый урон противнику могли лишь четырехмоторные самолеты, способные транспортировать на большую дальность солидную бомбовую нагрузку и иметь мощное оборонительное вооружение. К счастью для англичан, они озаботились созданием тяжелых бомбардировщиков задолго до войны, в результате в течение 1940—1941 гг. на вооружение поступили три типа самолетов, составивших основу мощи Бомбардировочного Командования на протяжении последних трех лет войны. Новые машины были ответом авиапромышленности на тактико-технические требования, предъявленные в 1936г.</span></p>
+      <p><span style="text-align: justify">К началу 1944 года &ldquo;Халифаксы&rdquo; вместе с &ldquo;Ланкастерами&rdquo; составляли подавляющее большинство в Авиации Бомбардир</span>овочного Командования. Рассказ о &ldquo;Ланкастере&rdquo;, ставшем венцом британских тяжелых бомбардировщиков, необходимо начать с другой машины — двухмоторного &ldquo;Манчестера&rdquo;.</p>      
+      <div align="center">
+        <p><a href="england/lanca.html"><img src="images/lanca.jpg" alt="" width="450" height="279" border="0"/></a></p>
+        <p class="style2"><em>Avro 683 Lancaster</em></p>
+      </div>
+            <p>"Манчестер", детище фирмы &ldquo;А.В.Роз&rdquo; и главного конструктор<span style="text-align: justify">а Роя Чедвика, занимает уникальное место среди машин второй мировой войны. Ни один другой двухмоторный самолет не мог соперничать с ним по весу боевой нагрузки (4700 кг бомб): он, безусловно, принадлежал к тяжелым бомбардировщикам. Для того чтобы поднять такой вес, на &ldquo;Манчестере&rdquo; использовались двигатели Роллс-Ройс &ldquo;Валчэр&rdquo; (1760 л.с.), которые, к сожалению, так и не удалось довести. Именно двигатели оказались ахиллесовой пятой удачного в остальном самолета — их надежность была низкой, а в случае отказа одного из них &ldquo;Манчестер&rdquo; имел немного шансов дотянуть до своей базы.</span></p>
+      <p><span style="text-align: justify">И вот, на основе этого &ldquo;самого большого разочарования Королевских ВВС&rdquo; (по выражению одного</span> из высших офицеров), тот же конструктор сумел создать новую машину, &ldquo;Ланкастер&rdquo;, заслужившую прямо противоположную репутацию и горячую любовь экипажей.</p>
+      <p>Когда (еще осенью 1940 года) бесперспективность &ldquo;Манчестера&rdquo; стала очевидной, Чедвик предложил, сохранив прежний фюзеляж, увеличить размах крыла и оснастить машину четырьмя надежными двигателями Роллс-Ройс &ldquo;Мерлин&rdquo;. Вскоре прототип новой модификации был готов, и 9 января 1941 года пилот-испытатель X. Браун поднял в воздух опытный экземпляр Avro 68.</p>
+    <p>&ldquo;Ланкастеры&rdquo; модификаций Mk.I и Mk.III признаны экспертами в качестве лучших ночных тяжелых бомбардировщиков Второй мировой войны.</p></td>
+  </tr>
+</table>
+</body>
+</html>

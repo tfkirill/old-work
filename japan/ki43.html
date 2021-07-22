@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>KI-43</strong></div>
+  
+     
+      <div>
+      <p align="center"><img src="../images/vvsjap/ki43.jpg" width="390" height="260">        
+      <p>Одноместный японский истребитель <strong>Nakajima Ki-43 Hayabusa (Сокол сапсан)</strong> создан для замены Ki 27 по контракту ВВС Императорской армии Японии.<br>
+          
+          Конструкция Ki 27 была столь удачной, что, не прибегая к обычному для Японии конкурсу на производство самолета, ВВС уполномочил Накадзиму создать улучшенную модель своего истребителя Ки 27. Основным требованием к новому истребителю была высокая скорость - не менее 500 км/ч при сохранении маневренности на уровне Ki 27.<br>
+          Три первых прототипа были готовы и прошли испытания в 1939 году, но они не обладали должной маневренностью, поэтому были собраны еще 10 предсерийных самолетов с разными конфигурациями, в двух из которых были использованы новые боевые закрылки типа "бабочка", которые в значительной мере и предопределили судьбу проекта - при их выпускании самолет становился значительно более маневренным.<br>
+       <br>
+          Осенью 1942 года модификация<strong> Ki-43-II</strong>  поступила в производство. Главным отличием от предыдущих моделей являлось использование более мощного мотора Hа-115 мощностью 1130 л.с. и трехлопастного цельнометаллического винта постоянного шага (на предыдущей модели был двухлопастной винт). Крылья были усилены для установки 250 кг бомб, а пулеметы заменены на крупнокалиберные. Кроме того, крыльевые топливные баки сделали протектированными, а защита пилота теперь обеспечивалась бронеспинкой толщиной 13 мм (на предыдущих моделях для облегчения самолета не была предусмотрена защита пилота и топливных баков).<br>
+    Всего изготовлено 5919 <strong>Ki 43</strong>, большую часть которых составляли модификации <strong>Ki 43-IIa</strong>.    </td>
+  </tr>
+</table>
+</body>
+</html>
+

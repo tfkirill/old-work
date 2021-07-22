@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><p>В список внесены пилоты, одержавшие более 30 побед.</p>
+     <table border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+        <tbody>
+          <tr>
+            <th width="129"><a>Фамилия, Имя, Отчество</a></th>
+            <th width="123"><a>Авиаполк</a></th>
+            <th width="70"><a>Победы личные</a></th>
+            <th width="91"><a>Самолёт</a></th>
+            <th width="118"><a>Количество вылетов /<br>
+              воздушных боев</a></th>
+            <th width="295"><a>Примечания</a></th>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Хироёси Нисидзава <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">西澤 広義</span> <i>Нисидзава Хироёси</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 4, 201, 251, 253, «Тайнань» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>87</a></td>
+            <td style="color: #B7C0A5"><a href="japan/a4m.html" class="style3"><em><strong>A5M</strong></em></a>, A6M</td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>По другим данным 147—150. Погиб 26 октября 1944 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Тэцудзо Ивамото <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">岩本 徹三</span> <i>Ивамото Тэцудзо</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 12, 203, 253, 254 авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>80</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>По другим данным 202.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Сёити Сугита <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">杉田 庄一</span> <i>Сугита Сё:ити</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 201, 204, 263, 301 авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>70</a></td>
+            <td style="color: #B7C0A5"><a>A6M, N1K</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>По другим данным более 120. Участвовал в эскорте адмирала Ямамото. Погиб 15 апреля 1945 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Сигэо Фукумото <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">福本 繁夫</span> <i>Фукумото Сигэо</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС</a></td>
+            <td style="color: #B7C0A5"><a>72</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Сабуро Сакаи <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">坂井 三郎</span> <i>Сакаи Сабуро</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 12, 343, «Тайнань», «Йокосука» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>64</a></td>
+            <td style="color: #B7C0A5"><a href="japan/a4m.html" class="style3"><em><strong>A5M</strong></em></a>, A6M, N1K</td>
+            <td style="color: #B7C0A5"><a>&nbsp;&gt;200</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Хиромити Синохара <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">篠原 弘道</span> <i>Синохара Хиромити</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 11 сентай</a></td>
+            <td style="color: #B7C0A5"><a>58</a></td>
+            <td style="color: #B7C0A5"><a title="Ki-27" class="mw-redirect">Ki-27</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Все победы одержал на Халхин-Голе. 27 июня 1939 года за день сбил 11 самолётов. Погиб 27 августа 1939 года в бою с советскими истребителями.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Такэо Окумура <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">奥村 武雄</span> <i>Окумура Такэо</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 14, 201, «Рюйдзё» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>54</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>По другим данным 98. За день 14 сентября 1943 года сбил 9 самолётов. 22 сентября 1943 года не вернулся из боевого вылета.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Дзюнъити Сасаи <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">笹井 醇一</span> <i>Сасаи Дзюнъити</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, «Тайнань» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>54</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a>76/?</a></td>
+            <td style="color: #B7C0A5"><a>Не вернулся из боевого вылета 26 августа 1942 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Ясухико Куроэ <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">黒江 保彦</span> <i>Куроэ Ясухико</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 59, 64 сентай</a></td>
+            <td style="color: #B7C0A5"><a>51</a></td>
+            <td style="color: #B7C0A5">Ki-27,<a href="japan/ki43.html" class="style3"><strong><em> Ki-44</em></strong></a>, Ki-84, Ki-102</td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Был сбит три раза, трижды ранен. Сбил 4 B-29.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Сатору Анабуки <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">穴吹 智</span> <i>Анабуки Сатору</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 50 сентай</a></td>
+            <td style="color: #B7C0A5"><a>51</a></td>
+            <td style="color: #B7C0A5">Ki-27,<a href="japan/ki43.html" class="style3"><em><strong> Ki-43</strong></em></a>, Ki-84</td>
+            <td style="color: #B7C0A5"><a>173/?</a></td>
+            <td style="color: #B7C0A5"><a>Сбил 4 B-24 и 1 B-29</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Кэндзи Окабэ <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">岡部 健二</span> <i>Окабэ Кэндзи</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 12, «Сёкаку», «Омура» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>50</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>8 мая 1942 года в одном бою сбил 6 самолётов.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Тосио Сакагава <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">坂川 敏雄</span> <i>Сакагава Тосио</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия</a></td>
+            <td style="color: #B7C0A5"><a>&gt;49</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Наоси Канно <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">菅野　直</span> <i>Канно Наоси</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 201, 343 авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>48</a></td>
+            <td style="color: #B7C0A5"><a>A6M, N1K</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Сбил 2 B-24. 1 августа 1945 года не вернулся из боевого вылета.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Рёдзи Охара <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">大原 亮治</span> <i>О:хара Рё:дзи</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 6, 204, «Йокосука» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>48</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Прозвище «Рабаульский убийца».</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Ёсихико Накада <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">仲田 義彦</span> <i>Накада Ёсихико</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия</a></td>
+            <td style="color: #B7C0A5"><a>45</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Иёдзо Фудзита <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">藤田 怡与藏</span> <i>Фудзита Иёдзо</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 301, «Сорю», «Хирю» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>42</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Суми Камито <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">上戸 住</span> <i>Камито Суми</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия</a></td>
+            <td style="color: #B7C0A5"><a>&gt;40</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Садами Комати <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">小町 定</span> <i>Комати Садами</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 204, 253, «Сёкаку», «Йокосука» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>40</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"><a>&nbsp;?\&gt;180</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Кэндзи Симада <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">島田 健二</span> <i>Симада Кэндзи</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 11 сентай</a></td>
+            <td style="color: #B7C0A5"><a>40</a></td>
+            <td style="color: #B7C0A5"><a title="Ki-27" class="mw-redirect">Ki-27</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Все победы одержал на Халхин-Голе. Погиб 15 сентября 1939 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Исаму Сасаки <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">佐々木 勇</span> <i>Сасаки Исаму</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 50 сентай</a></td>
+            <td style="color: #B7C0A5"><a>&gt;38</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Сбил 6 B-29</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Мицуёси Таруи <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">垂井 光義</span> <i>Таруи Мицуёси</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия</a></td>
+            <td style="color: #B7C0A5"><a>38</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Канэёси Муто <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">武藤 金義</span> <i>Муто: Канэёси</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, 3, 12, 252, 343, «Йокосука» авиагруппы</a></td>
+            <td style="color: #B7C0A5"><a>35</a></td>
+            <td style="color: #B7C0A5"><a>A5M, A6M, N1K</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>Был сбит 24 июля 1945 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Тосио Ота <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">太田 敏夫</span> <i>О:та Тосио</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС, «Тайнань» авиагруппа</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a title="A6M" class="mw-redirect">A6M</a></td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5"><a>Был сбит 21 октября 1942 года.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Исаму Касиидэ <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">樫出 勇</span> <i>Касиидэ Исаму</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 4, 59 сентай</a></td>
+            <td style="color: #B7C0A5"><a>33</a></td>
+            <td style="color: #B7C0A5"><a>Ki-27, Ki-45</a></td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5"><a>Сбил 26 B-29.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Кацуми Амма <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">安間 克己</span> <i>Амма Кацуми</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия</a></td>
+            <td style="color: #B7C0A5"><a>32</a></td>
+            <td style="color: #B7C0A5">&nbsp;</td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Морицугу Канаи <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">金井 守告</span> <i>Канаи Морицугу</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>Армия, 11, 25, 87 сентай</a></td>
+            <td style="color: #B7C0A5"><a>32</a></td>
+            <td style="color: #B7C0A5"><a href="japan/ki43.html" title="Ki-43" class="style3"><em><strong>Ki-43</strong></em></a></td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5"></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a>Кадзуо Сугино <span style="font-weight: normal;">(яп. <span lang="ja" style="font-size: 110%; font-style: normal;" xml:lang="ja">杉野 計雄</span> <i>Сугино Кадзуо</i>)</span><br>
+            </a></td>
+            <td style="color: #B7C0A5"><a>ВМС</a></td>
+            <td style="color: #B7C0A5"><a>32</a></td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5"></td>
+            <td style="color: #B7C0A5"></td>
+          </tr>
+        </tbody>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="../index.html"><img src="../images/fon.jpg" width="900" height="218"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;"><a href="../eng.html"><img src="../images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="../images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../eng.html">История</a></li>
+              <li><a href="../vvseng.html">Самолеты</a></li>
+              <li><a href="../a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ussr.html"><img src="../images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="../images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="../ussr.html">История</a></li>
+              <li><a href="../vvsovet.html">Самолеты</a></li>
+              <li><a href="../s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../ger.html"><img src="../images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="../images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="../ger.html">История</a></li>
+              <li><a href="../vvsluft.html">Самолеты</a></li>
+              <li><a href="../n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="../jap.html"><img src="../images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="../images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="../jap.html">История</a></li>
+              <li><a href="../vvsja.html">Самолеты</a></li>
+              <li><a href="../y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div style="text-align: center; font-size: 24px;"><strong>SPITFIRE MK.I</strong></div>
+     
+      <p align="center"><img src="../images/vvseng/spit.jpg" width="293" height="172"></p>
+        <p> 
+          Одноместный истребитель, одномоторный цельнометаллический моноплан. Опытный Spitfire (Prototype K5054) совершил свой первый полет 06.03.1936, серийное производство истребителей этого типа началось в мае 1938 г, а с августа того же года они появились в строевых частях RAF.
+          <br>
+          Самолеты семейства <strong>Spitfire</strong> стали лучшими истребителями RAF и одними из лучших истребителей периода Второй мировой войны.<br>
+          
+          Истребители первой серийной модификации<strong> Mk.I</strong> были оснащены крылом типа «А» с 8 крыльевыми пулеметами Colt-Browning Mk.II калибра .303 (7,7-мм). С 194-го серийного самолета V-образный рядный двигатель жидкостного охлаждения Rolls-Royce Merlin II заменили на Merlin III. На первых серийных <strong>Spitfire</strong> стояли двухлопастные деревянные винты постоянного шага. С 74-го самолета внедрили трехлопастной металлический винт De Havilland 5/21. К концу 1939 г. стандартным стал винт-автомат De Havilland 5/20, тоже трехлопастной, металлический. Этими винтами оснастили большую часть <strong>Spitfire</strong>.
+          <br>
+          Все первые серийные истребители комплектовались примитивными механическими прицелами в виде кольца и мушки. Только в июле 1939 г. на вооружение приняли более совершенный коллиматорный прицел GM2 Mk.II. Машины более раннего выпуска оснащались им уже в строевых частях<br>
+          С появлением в середине 1940 г. пушечной модификации <strong>Spitfire Mk.IB</strong> с крылом типа «В» самолеты с пулеметным вооружением получили обозначение <strong>Spitfire Mk.IA</strong>.<br>
+          <br>
+          Истребители <strong>Spitfire Mk.IA</strong> пошли в бой с первого дня Второй мировой войны, активно участвовали в «Битве за Британию», став одним из факторов, принесших победу RAF над Люфтваффе. В течение 1941 г. их сменили в строевых частях <strong>Spitfire Mk.V</strong>. Всего было построено 1567 машин модификации Mk.I.
+          </div>
+        </p></td>
+  </tr>
+</table>
+</body>
+</html>
+

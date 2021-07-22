@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<link href="css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript" src="scriptjava.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+var cssmenuids=["cssmenu1"] //Enter id(s) of CSS Horizontal UL menus, separated by commas
+var csssubmenuoffset=-1 //Offset of submenus from main menu. Default is 0 pixels.
+function createcssmenu2(){
+for (var i=0; i<cssmenuids.length; i++){
+  var ultags=document.getElementById(cssmenuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+			ultags[t].style.top=ultags[t].parentNode.offsetHeight+csssubmenuoffset+"px"
+    	var spanref=document.createElement("span")
+			spanref.className="arrowdiv"
+			spanref.innerHTML="    "
+			ultags[t].parentNode.getElementsByTagName("a")[0].appendChild(spanref)
+    	ultags[t].parentNode.onmouseover=function(){
+					this.style.zIndex=100
+    	this.getElementsByTagName("ul")[0].style.visibility="visible"
+					this.getElementsByTagName("ul")[0].style.zIndex=0
+    	}
+    	ultags[t].parentNode.onmouseout=function(){
+					this.style.zIndex=0
+					this.getElementsByTagName("ul")[0].style.visibility="hidden"
+					this.getElementsByTagName("ul")[0].style.zIndex=100
+    	}    }  }}
+if (window.addEventListener)
+window.addEventListener("load", createcssmenu2, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createcssmenu2)
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="900" border="2" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+  <tr>
+    <td><div align="center"><a href="index.html"><img src="images/fon.jpg" width="900" height="218" border="0"></a></div></td>
+  </tr>
+  <tr align="center">
+    <td align="center">
+	    <table border="0">
+      <tr>
+        <th align="center" valign="top" scope="col">
+    <div class="horizontalcssmenu" align="center">
+      
+        <ul id="cssmenu1">
+          <li style="border-left: 1px solid #202020;">
+            <a href="eng.html"><img src="images/eng.png" width="16" height="16" alt=""/><span class="style3">Англия</span><img src="images/eng.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="eng.html">История</a></li>
+              <li><a href="vvseng.html">Самолеты</a></li>
+              <li><a href="a_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ussr.html"><img src="images/sov.png" width="16" height="16" alt=""/><span class="style3">СССР</span><img src="images/sov.png" width="16" height="16" alt=""/></a>          
+            <ul>
+              <li><a href="ussr.html">История</a></li>
+              <li><a href="vvsovet.html">Самолеты</a></li>
+              <li><a href="s_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="ger.html"><img src="images/nem.png" width="16" height="16" alt=""/><span class="style3">Германия</span><img src="images/nem.png" width="16" height="16" alt=""/></a>
+            <ul>   
+              <li><a href="ger.html">История</a></li>
+              <li><a href="vvsluft.html">Самолеты</a></li>
+              <li><a href="n_l.html">Летчики</a></li>
+            </ul>
+          <li><a href="jap.html"><img src="images/jap.png" width="16" height="16" alt=""/><span class="style3">Япония</span><img src="images/jap.png" width="16" height="16" alt=""/></a>
+            <ul>
+              <li><a href="jap.html">История</a></li>
+              <li><a href="vvsja.html">Самолеты</a></li>
+              <li><a href="y_l.html">Летчики</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div></th>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><p>7 советских лётчиков-истребителей, удостоенных за боевые подвиги звания трижды и дважды Героя Советского Союза, одержали от 22 до 62 побед, в общей сложности они сбили 1044 вражеских самолёта (плюс 184 в группе). По 16 и более побед имеют свыше 800 пилотов. Советские асы (3&nbsp;% от всех летчиков) уничтожили 30&nbsp;% самолётов противника. В список внесены пилоты, одержавшие более 30 личных побед. С 1936 по 1953 годы свыше 3190 советских летчиков уничтожили 5 и более самолетов противника.</p>
+ <table border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#B33342">
+        <tbody>
+          <tr>
+            <th width="118">Фамилия, Имя Отчество</th>
+            <th width="128">Авиационный полк (Авиаполк)</th>
+            <th width="66">Победы личные</th>
+            <th width="66">Победы в группе</th>
+            <th width="85">Самолёт</th>
+            <th width="112">Количество вылетов / воздушных боёв</th>
+            <th width="239">Примечания</th>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Кожедуб, Иван Никитович">Кожедуб, Иван Никитович</a></td>
+            <td style="color: #B7C0A5"><a>240 иап, 176 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>64</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5">Ла-5, Ла-5ФН <a href="ussr/la7.html" class="style3"><em><strong>Ла-7</strong></em></a>, ИЛ-2, МИГ-3</td>
+            <td style="color: #B7C0A5"><a>330 / 120</a></td>
+            <td style="color: #B7C0A5"><a>+2 американских истребителя Р-51 «Мустанг», пытавшихся атаковать Ивана Кожедуба</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Покрышкин, Александр Иванович">Покрышкин, Александр Иванович</a></td>
+            <td style="color: #B7C0A5"><a>55 иап, 16 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>59</a></td>
+            <td style="color: #B7C0A5"><a>6</a></td>
+            <td style="color: #B7C0A5">МиГ-3,<span class="style3"><strong><a href="ussr/yak1.html" class="style3"> <strong><em>Як-1</em></strong></a>, <a href="ussr/p39.html" class="style3"><em><strong>P-39</strong></em></a> </a>Аэрокобра</td>
+            <td style="color: #B7C0A5"><a>650 / 156</a></td>
+            <td style="color: #B7C0A5"><a>+8 неучтенных до 13.08.1941&nbsp;г.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Гулаев, Николай Дмитриевич">Гулаев, Николай Дмитриевич</a></td>
+            <td style="color: #B7C0A5"><a>27 иап, 129 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>57</a></td>
+            <td style="color: #B7C0A5"><a>4</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/yak1.html" class="style3"><strong><em>Як-1</em></strong></a>,<a href="ussr/il2.html"  class="style3"><em><strong>ИЛ-2</strong></em></a>, ЛА-5, <a href="ussr/la7.html" class="style3"><em><strong>ЛА-7</strong></em></a></td>
+            <td style="color: #B7C0A5"><a>290 / 69</a></td>
+            <td style="color: #B7C0A5"><a>в том числе 2 тарана (14 мая и 9 июня 1943 года в районе Белгорода).</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Речкалов, Григорий Андреевич">Речкалов, Григорий Андреевич</a></td>
+            <td style="color: #B7C0A5"><a>55 иап, 16 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>56</a></td>
+            <td style="color: #B7C0A5"><a>5 (6)</a></td>
+            <td style="color: #B7C0A5">И-153,<a href="ussr/i16.html" class="style3"><em><strong>И-16</strong></em></a>, <a href="ussr/p39.html" class="style3"><em><strong>P-39</strong></em></a></td>
+            <td style="color: #B7C0A5"><a>450 / 122</a></td>
+            <td style="color: #B7C0A5"><a>+3 неучтенных до 01.08.1941&nbsp;г.&nbsp;</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Евстигнеев, Кирилл Алексеевич">Евстигнеев, Кирилл Алексеевич</a></td>
+            <td style="color: #B7C0A5"><a>240 иап, 178 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>53</a></td>
+            <td style="color: #B7C0A5"><a>2</a></td>
+            <td style="color: #B7C0A5"><a>Ла-5Ф, Ла-5ФН</a></td>
+            <td style="color: #B7C0A5"><a>296 / &gt;120</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Ворожейкин, Арсений Васильевич">Ворожейкин, Арсений Васильевич</a></td>
+            <td style="color: #B7C0A5"><a>22, 728 иап, 32 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>52</a></td>
+            <td style="color: #B7C0A5"><a>13 (14)</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/i16.html" class="style3"><strong><em>И-16</em></strong></a>, <strong><em><a href="ussr/yak7.html" class="style3">Як-7Б</a></em></strong>, Як-9</td>
+            <td style="color: #B7C0A5"><a>&gt;300 / 90</a></td>
+            <td style="color: #B7C0A5"><a>6 / 13&nbsp;— в Монголии</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Глинка, Дмитрий Борисович">Глинка, Дмитрий Борисович</a></td>
+            <td style="color: #B7C0A5"><a>45 иап, 100 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>50</a></td>
+            <td style="color: #B7C0A5"><a>6</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/p39.html" class="style3"><strong><em>P-39 </em></strong></a>Аэрокобра <strong class="style3"><em><a href="ussr/la7.html" class="style3">ЛА-7</a></em></strong>, МИГ-3</td>
+            <td style="color: #B7C0A5"><a>300 / 100</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Попков, Виталий Иванович">Попков, Виталий Иванович</a></td>
+            <td style="color: #B7C0A5"><a>739 иап, 5 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>47</a></td>
+            <td style="color: #B7C0A5"><a>13</a></td>
+            <td style="color: #B7C0A5"><a title="Ла-5">Ла-5ФН</a></td>
+            <td style="color: #B7C0A5"><a>475 / 113</a></td>
+            <td style="color: #B7C0A5"><a>включая 1 таран (17 апреля 1945 года районе города Котбуса (Германия)). По данным М. Быкова имел 41 / 1 победы, а по данным Н.Антошкина имел 60 побед.</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Колдунов, Александр Иванович">Колдунов, Александр Иванович</a></td>
+            <td style="color: #B7C0A5"><a class="new" title="866-й истребительный авиационный полк (страница отсутствует)">866 иап</a></td>
+            <td style="color: #B7C0A5"><a>46</a></td>
+            <td style="color: #B7C0A5"><a>1</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/yak1.html" class="style3"><em><strong>Як-1</strong></em></a>, Як-9, Як-3 <a href="ussr/la7.html" class="style3"><strong><em>ЛА-7</em></strong></a></td>
+            <td style="color: #B7C0A5"><a>412 / 96</a></td>
+            <td style="color: #B7C0A5"><a>+1 P-38 ВВС США</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Скоморохов, Николай Михайлович">Скоморохов, Николай Михайлович</a></td>
+            <td style="color: #B7C0A5"><a class="new" title="164-й истребительный авиационный полк (страница отсутствует)">164 иап</a></td>
+            <td style="color: #B7C0A5"><a>46</a></td>
+            <td style="color: #B7C0A5"><a>8</a></td>
+            <td style="color: #B7C0A5"><a title="Ла-5">Ла-5</a></td>
+            <td style="color: #B7C0A5"><a>605 / 143</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Бобров, Владимир Иванович">Бобров, Владимир Иванович</a></td>
+            <td style="color: #B7C0A5"><a>237, 27 иап, 129, 104 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>43</a></td>
+            <td style="color: #B7C0A5"><a>23</a></td>
+            <td style="color: #B7C0A5"><em><strong><span class="style3"><a href="ussr/i16.html" class="style3">И-16</a></span></strong></em>, P-39 Аэрокобра</td>
+            <td style="color: #B7C0A5"><a>577 / 159</a></td>
+            <td style="color: #B7C0A5"><a>13 / 4 побед в Испании</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Костылёв, Георгий Дмитриевич" class="mw-redirect">Костылёв, Георгий Дмитриевич</a></td>
+            <td style="color: #B7C0A5"><a>5 иап БФ, 3, 4 гвиап БФ, инспектор штаба ВВС БФ</a></td>
+            <td style="color: #B7C0A5"><a>43</a></td>
+            <td style="color: #B7C0A5"><a>3</a></td>
+            <td style="color: #B7C0A5"><a>ЛаГГ-3, Ла-5</a></td>
+            <td style="color: #B7C0A5"><a>418 / 112</a></td>
+            <td style="color: #B7C0A5"><a>Сбивший наибольшее количество самолётов ас морской авиации</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Грицевец, Сергей Иванович">Грицевец, Сергей Иванович</a></td>
+            <td style="color: #B7C0A5"><a>ОИАГ</a></td>
+            <td style="color: #B7C0A5"><a>42</a></td>
+            <td style="color: #B7C0A5"><a>7</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/i16.html" title="Поликарпов И-16" class="style3"><strong><em>И-16</em></strong></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>30/7 побед в Испании, 12 в Монголии</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Алелюхин, Алексей Васильевич">Алелюхин, Алексей Васильевич</a></td>
+            <td style="color: #B7C0A5"><a>69 иап, 9 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>40</a></td>
+            <td style="color: #B7C0A5"><a>17</a></td>
+            <td style="color: #B7C0A5">Ла-5ФН, <a href="ussr/la7.html" class="style3"><em><strong>Ла-7</strong></em></a></td>
+            <td style="color: #B7C0A5"><a>601 / 258</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Серов, Владимир Георгиевич">Серов, Владимир Георгиевич</a></td>
+            <td style="color: #B7C0A5"><a title="159-й истребительный авиационный полк">159 иап</a></td>
+            <td style="color: #B7C0A5"><a>39</a></td>
+            <td style="color: #B7C0A5"><a>8</a></td>
+            <td style="color: #B7C0A5"><a title="Ла-5">Ла-5</a></td>
+            <td style="color: #B7C0A5"><a>300 / 104</a></td>
+            <td style="color: #B7C0A5"><a>включая 1 таран (26 июня 1944 года в районе города Выборга)</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Голубев, Василий Фёдорович">Голубев, Василий Фёдорович</a></td>
+            <td style="color: #B7C0A5"><a>13 иап БФ, 4 гвиап БФ</a></td>
+            <td style="color: #B7C0A5"><a>39</a></td>
+            <td style="color: #B7C0A5"><a>12</a></td>
+            <td style="color: #B7C0A5"><a href="ussr/i16.html" class="style3"><em><strong>И-16</strong></em></a>, Ла-5,<a href="ussr/la7.html" class="style3"><strong><em><strong>Ла-7</em></strong></a></td>
+            <td style="color: #B7C0A5"><a>589 / 133</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Покрышев, Пётр Афанасьевич">Покрышев, Пётр Афанасьевич</a></td>
+            <td style="color: #B7C0A5"><a>7, 154, 159 иап, 27 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>38</a></td>
+            <td style="color: #B7C0A5"><a>8</a></td>
+            <td style="color: #B7C0A5"><a>И-16, Як-7, P-40E, Ла-5, Як-9</a></td>
+            <td style="color: #B7C0A5"><a>305 / 60</a></td>
+            <td style="color: #B7C0A5"><a>По другим данным 22/7 лично и в группе</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Бабак, Иван Ильич">Бабак, Иван Ильич</a></td>
+            <td style="color: #B7C0A5"><a>45 иап, 100, 16 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>37</a></td>
+            <td style="color: #B7C0A5"><a>4</a></td>
+            <td style="color: #B7C0A5"><a>P-39 , МИГ-3</a></td>
+            <td style="color: #B7C0A5"><a>330 / 103</a></td>
+            <td style="color: #B7C0A5"><a>По другим данным 35 / 5 лично и в группе</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Луганский, Сергей Данилович">Луганский, Сергей Данилович</a></td>
+            <td style="color: #B7C0A5"><a>162, 270 иап</a></td>
+            <td style="color: #B7C0A5"><a>37</a></td>
+            <td style="color: #B7C0A5"><a>6</a></td>
+            <td style="color: #B7C0A5"><a>ЛаГГ-3, Як-1, Як-7</a></td>
+            <td style="color: #B7C0A5"><a>390 /</a></td>
+            <td style="color: #B7C0A5"><a>включая 2 тарана (первый таран 14 сентября 1942 года в районе Сталинграда, второй&nbsp;— совершил 27 сентября 1943 года у с. Мишурин Рог Кировоградской области), включая 1 победу в группе в войне с Финляндией</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a class="new" title="Долгих, Анатолий Гаврилович (страница отсутствует)">Долгих, Анатолий Гаврилович</a></td>
+            <td style="color: #B7C0A5"><a>ВВС БФ</a></td>
+            <td style="color: #B7C0A5"><a>36</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+            <td style="color: #B7C0A5"><a>включая 1 таран (в 1943 году на Балтике).</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Фёдоров, Иван Васильевич">Фёдоров, Иван Васильевич</a></td>
+            <td style="color: #B7C0A5"><a>307, 812 иап</a></td>
+            <td style="color: #B7C0A5"><a>36</a></td>
+            <td style="color: #B7C0A5"><a>1</a></td>
+            <td style="color: #B7C0A5"><a title="Як-9">Як-9Т</a></td>
+            <td style="color: #B7C0A5"><a>416 / 106</a></td>
+            <td style="color: #B7C0A5"><a>включая 1 таран (10 мая 1943 года в районе станицы Абинской Краснодарского края). 9 самолётов уничтожил на аэродромах</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Камозин, Павел Михайлович">Камозин, Павел Михайлович</a></td>
+            <td style="color: #B7C0A5"><a>296, 66 иап</a></td>
+            <td style="color: #B7C0A5"><a>35</a></td>
+            <td style="color: #B7C0A5"><a>13</a></td>
+            <td style="color: #B7C0A5"><a title="P-39" class="mw-redirect">P-39</a></td>
+            <td style="color: #B7C0A5"><a>200 / 70</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Лавриненков, Владимир Дмитриевич">Лавриненков, Владимир Дмитриевич</a></td>
+            <td style="color: #B7C0A5"><a>69, 4 иап, 9 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>35</a></td>
+            <td style="color: #B7C0A5"><a>11</a></td>
+            <td style="color: #B7C0A5"><a>Як-1, Ла-7</a></td>
+            <td style="color: #B7C0A5"><a>448 / 134</a></td>
+            <td style="color: #B7C0A5"><a>включая 1 таран (23 августа 1943 года в районе села Александровка Ростовской области). По данным М.&nbsp;Ю.&nbsp;Быкова имел 38 / 6 побед</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Решетов, Алексей Михайлович">Решетов, Алексей Михайлович</a></td>
+            <td style="color: #B7C0A5"><a>157, 273 иап, 31 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>35</a></td>
+            <td style="color: #B7C0A5"><a>8</a></td>
+            <td style="color: #B7C0A5"><a title="Як-1">Як-1Б</a></td>
+            <td style="color: #B7C0A5"><a>821 / 200</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Чубуков, Фёдор Михайлович">Чубуков, Фёдор Михайлович</a></td>
+            <td style="color: #B7C0A5"><a>154 иап, 29 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>5</a></td>
+            <td style="color: #B7C0A5"><a>И-16, Як-7, P-40E, Як-9</a></td>
+            <td style="color: #B7C0A5"><a>350 / 100</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Гнидо, Пётр Андреевич">Гнидо, Пётр Андреевич</a></td>
+            <td style="color: #B7C0A5"><a>13, 248 иап, 111 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>6</a></td>
+            <td style="color: #B7C0A5"><a rel="nofollow" class="external text">Ла-7</a></td>
+            <td style="color: #B7C0A5"><a>412 / 82</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Кочетов, Александр Васильевич">Кочетов, Александр Васильевич</a></td>
+            <td style="color: #B7C0A5"><a>629, 43 иап, 54 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>8</a></td>
+            <td style="color: #B7C0A5"><a title="Як-9">Як-9</a></td>
+            <td style="color: #B7C0A5"><a>488 / 105</a></td>
+            <td style="color: #B7C0A5"><a>По данным М. Быкова имел 20 / 11 побед</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Сытов, Иван Никитович">Сытов, Иван Никитович</a></td>
+            <td style="color: #B7C0A5"><a class="new" title="5-й гвардейский истребительный авиационный полк (страница отсутствует)">5 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>4</a></td>
+            <td style="color: #B7C0A5"><a>Ла-5 , МИГ-3</a></td>
+            <td style="color: #B7C0A5"><a>250 /</a></td>
+            <td style="color: #B7C0A5"><a>включая 2 тарана (первый таран 3 апреля 1943 года над рекой Северский Донец, второй&nbsp;— возможно совершил 16 октября 1943 года над Днепром).</a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Смирнов, Алексей Семёнович">Смирнов, Алексей Семёнович</a></td>
+            <td style="color: #B7C0A5"><a>153 иап, 28 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>15</a></td>
+            <td style="color: #B7C0A5"><a>И-153, P-39Q, P-39D</a></td>
+            <td style="color: #B7C0A5"><a>457 / 72</a></td>
+            <td style="color: #B7C0A5"><a href=""></a></td>
+          </tr>
+          <tr>
+            <td style="color: #B7C0A5"><a title="Зайцев, Василий Александрович">Зайцев, Василий Александрович</a></td>
+            <td style="color: #B7C0A5"><a>129 иап, 5, 105 гвиап</a></td>
+            <td style="color: #B7C0A5"><a>34</a></td>
+            <td style="color: #B7C0A5"><a>19</a></td>
+            <td style="color: #B7C0A5"><a>ЛаГГ-3, Ла-7</a></td>
+            <td style="color: #B7C0A5"><a>427 / 163</a></td>
+            <td style="color: #B7C0A5"><a>2 посадил на аэродром</a></td>
+          </tr>
+        </tbody>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
